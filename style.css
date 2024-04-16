@@ -52,7 +52,7 @@ nav ul li a{
  }
  /*---body--*/
 
- /* @keyframes slide {
+ @keyframes slide {
    0% {
       transform: translateX(0);
       opacity: 0;
@@ -62,7 +62,7 @@ nav ul li a{
       opacity: 1;
   }
    
- } */
+ }
 
 .home{
    width: 100%;
@@ -135,6 +135,7 @@ nav ul li a{
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: slide 1.3s ease-out;
 }
 .about img{
   width: 100%;
@@ -152,6 +153,27 @@ nav ul li a{
   }
   
 /* work */
+@keyframes sliden {
+  0% {
+     transform: translateX(-10px);
+     opacity: 0;
+ }
+ 100% {
+     transform: translateX(100px);
+     opacity: 1;
+ }
+}
+ @keyframes slidens {
+  0% {
+     transform: translateY(-10px);
+     opacity: 0;
+ }
+ 100% {
+     transform: translateY(100px);
+     opacity: 1;
+ }
+  
+}
 .work{
   font-family: "Poppins",sans-serif;
   font-style: normal;
@@ -176,6 +198,8 @@ nav ul li a{
   padding-right: 20px;
   font-size: 25px;
    width: 80%; 
+   animation: sliden 4s ease-in-out;
+   animation-play-state: running;
 }
 .des h1{
   color: #F79489;
@@ -184,6 +208,7 @@ nav ul li a{
  
  width: 100%;
  border-radius: 5%;
+ animation: slidens 1.3s ease-out;
 }
 .work1 img:hover{
   border:6px solid #F79489 ;
